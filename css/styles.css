@@ -1,0 +1,89 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    color: #434455;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.logo-accent {
+    color: #2e2f42;
+}
+.logo-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 76px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+  
+}
+.container {
+    max-width: 288px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+    .container {
+            max-width: 736px;
+        }
+}
+@media screen and (min-width: 1158px) {
+    .container {
+     max-width: 1158px;   
+    }
+}
+.nav-list {
+    display: none;
+}
+.adres-item {
+    display: none;
+}
+.mobile-open-btn {
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    fill: #2f2f37;
+}
+ 
