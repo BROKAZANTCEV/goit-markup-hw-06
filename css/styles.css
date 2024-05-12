@@ -20,26 +20,53 @@ ol {
 a {
     text-decoration: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* ========================================================================================================================================================
 
-button {
-    cursor: pointer;
+======================================================================================================================================================== */
+
+.container-navig {
+    max-width: 320px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+.container-navig {
+    max-width: 768px;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .container-navig {
+        max-width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto;
+        }
+}
+/* ========================================================================================================================================================
+Header
+======================================================================================================================================================== */
+.header {
+    border-bottom: 1px solid #e7e9fc;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
+.container-navig {
+    display: flex;
+    align-items: center;
 }
 
-.logo-accent {
-    color: #2e2f42;
+.nav-list,
+.adres-list {
+    display: none;
 }
+
 .logo-link {
+    display: block;
+    padding: 16px 0;
+
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -47,43 +74,130 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
+
+.logo-accent {
+    color: #2e2f42;
+}
+
+.nav {
+    margin-right: auto;
+}
+
+.mobile-open-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mobile-open-btn-icon {
+    display: block;
+    fill: #2f2f37;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-open-btn {
+        display: none;
+    }
+}
+
 .nav {
     display: flex;
     align-items: center;
-  
 }
-.container {
-    max-width: 288px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+
+.logo-link {
+    padding: 24px 0;
+    margin-right: 120px;
 }
-@media screen and (min-width: 768px) {
-    .container {
-            max-width: 736px;
-        }
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+
+.nav-link.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.nav-link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    bottom: -1px;
+}
+
+.adres {
+    display: block;
+    font-style: normal;
+}
+
+.adres-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.adres-link {    
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adres-link:hover,
+.adres-link:focus {
+    color: #404bbf;
 }
 @media screen and (min-width: 1158px) {
-    .container {
-     max-width: 1158px;   
-    }
+.logo {
+    margin-right: 76px;
 }
-.nav-list {
-    display: none;
 }
-.adres-item {
-    display: none;
+.adres-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
-.mobile-open-btn {
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    fill: #2f2f37;
+.adres-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
 }
- 
+/* ========================================================================================================================================================
+Hero
+======================================================================================================================================================== */
+
