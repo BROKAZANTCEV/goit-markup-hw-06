@@ -215,6 +215,11 @@ Hero
     background-size: cover;
     text-align: center;
 }
+@media screen and (min-resolution: 192dpi) {
+    .hero {
+        background-image: url ('../images/hero/img-mob@2x.jpg');
+    }
+}
 .hero-title {
     font-weight: 700;
     font-size: 36px;
@@ -248,23 +253,17 @@ Hero
 .hero-but:focus {
     background-color: #404bbf;
 }
-@media screen and (min-resolution: 192dpi) {
-    .hero {
-        background-image: url ('../images/hero/img-mob@2x.jpg');
-    }
-}
 @media screen and (min-width: 768px) {
-    .nero {
+    .hero {
         padding-top: 112px;
         padding-bottom: 112px;
         max-width: 768px;
-        max-height: 436px;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-tablet.jpg');
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/img-tablet.jpg');
     }
 }
 @media screen and (min-resolution: 192dpi) {
     .hero {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-tablet@2x.jpg');
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/img-tablet@2x.jpg');
     }
     .hero-title {
     font-size: 56px;
@@ -273,10 +272,38 @@ Hero
     margin-bottom: 36px;
     }
 }
+@media screen and (min-width: 1168px) {
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/img-desctop.jpg');
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .hero {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/img-desctop@2x.jpg');
+        }
+    }
+
+    .hero-title {
+        font-size: 56px;
+        max-width: 496px;
+        margin-bottom: 48px;
+    }
+}
+
 
 .benef-svg,
 .visually-hidden {
     display: none;
+}
+.benef-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .item-title {
