@@ -201,6 +201,10 @@ Header
 /* ========================================================================================================================================================
 Hero
 ======================================================================================================================================================== */
+.cont-pad {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .hero {
     background: #2e2f42;
     max-width: 320px;
@@ -228,6 +232,7 @@ Hero
     text-align: center;
     color: #ffffff;
     max-width: 216px;
+    padding-top: 0;
     margin-bottom: 72px;
     margin-right: auto;
     margin-left: auto;
@@ -260,19 +265,16 @@ Hero
         max-width: 768px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/img-tablet.jpg');
     }
-
-.hero-title {
-    font-weight: 700;
+    @media  (min-resolution: 192dpi) {
+        .hero {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/img-tablet@2x.jpg');
+        }    
+    }
+    .hero-title {   
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #ffffff;
-    max-width: 496px;
-    padding-top: 0;
-    margin-bottom: 48px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 496px; 
+    margin-bottom: 36px;   
     }
 }
 @media screen and (min-width: 1158px) {
@@ -281,6 +283,9 @@ Hero
         padding-bottom: 188px;
         max-width: 1440px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/img-desctop.jpg');
+    }.cont-pad {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
 @media screen and (min-resolution: 192dpi) {
@@ -291,7 +296,6 @@ Hero
 
 .hero-title {
     font-weight: 700;
-    
     font-size: 56px;
     max-width: 496px;
     margin-bottom: 48px;
@@ -321,11 +325,52 @@ Hero
     margin-bottom: 8px;
 
 }.item-p {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-align: center;
+    text-align: left;
+    
+}
+@media screen  and (min-width: 768px) {
+    .benef-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 72px 24px;
+    }
+    .benef-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .item-title {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .benef-svg {
+        display: block;
+    }
+    .benef-cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        background-color: #f4f4fd;
+    }
+    .benef-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+    .item-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+    }
+    .item-p {
+            font-weight: 400;
+    }
 }
