@@ -276,6 +276,17 @@ main {
 .team {
     background: #f4f4fd;
 }
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
 
 .team-item {
     background-color: #FFFFFF;
@@ -329,18 +340,6 @@ main {
 .svg-link:focus {
     background-color: #404bbf;
 }
-
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
-
 .team-soc {
     fill: #f4f4fd;
 }
