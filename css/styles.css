@@ -41,20 +41,20 @@ img {
 
 ======================================================================================================================================================== */
 
-.container-navig {
+.container {
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
-    .container-navig {
+    .container {
         max-width: 768px;
     }
 }
 
 @media screen and (min-width: 1158px) {
-    .container-navig {
+    .container {
         max-width: 1158px;
         padding: 0 15px;
         margin: 0 auto;
@@ -419,9 +419,11 @@ Benefits
 /* ========================================================================================================================================================
 Team
 ======================================================================================================================================================== */
-.cont-pad {
-
-}
+/* .cont-pad {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+} */
 .team {
     background: #f4f4fd;
 }
